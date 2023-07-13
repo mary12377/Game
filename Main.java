@@ -7,7 +7,7 @@ public class Main   {
         Scanner scanner = new Scanner(System.in);
         String secretNumber;
 
-        System.out.print("Enter the secret number (4 digits): ");
+        System.out.print("Введите цифры");
         secretNumber = scanner.nextLine();
 
         Game game = new Game(secretNumber);

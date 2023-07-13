@@ -20,7 +20,7 @@ class Game {
         String guess;
 
         do {
-            System.out.print("Enter your guess (4 digits): ");
+            System.out.print("Введите цифры ");
             guess = scanner.nextLine();
 
             if (guess.equals("хватит")) {
@@ -61,8 +61,8 @@ class Game {
             }
         }
 
-        return bulls + " " + (bulls == 1 ? "бык" : "быка") + " " +
-                cows + " " + (cows == 1 ? "корова" : "коровы");
+        return bulls + " " + (bulls == 1 ? "бык" : (bulls > 1 && bulls < 5) ? "быка" : "быков") + " " +
+                cows + " " + (cows == 1 ? "корова" : (cows > 1 && cows < 5) ? "коровы" : "коров");
     }
 
     private void saveGameToFile() {
