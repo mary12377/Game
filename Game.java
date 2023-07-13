@@ -43,7 +43,7 @@ class Game {
 
     private void checkWordLength(String word) throws WordLengthException {
         if (word.length() > 7) {
-            throw new WordLengthException("Word length should not exceed 7 characters");
+            throw new WordLengthException("Длина слова не должна превышать 7 символов");
         }
     }
 
